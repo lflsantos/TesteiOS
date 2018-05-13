@@ -14,15 +14,6 @@
 		7691C62A20A66A1F006A0812 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7691C62820A66A1F006A0812 /* LaunchScreen.storyboard */; };
 		7691C63520A66A1F006A0812 /* TesteiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C63420A66A1F006A0812 /* TesteiOSTests.swift */; };
 		7691C64020A66A1F006A0812 /* TesteiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C63F20A66A1F006A0812 /* TesteiOSUITests.swift */; };
-		7691C65D20A66EC8006A0812 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65420A66EC7006A0812 /* DINPro-Regular.otf */; };
-		7691C65E20A66EC8006A0812 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65520A66EC7006A0812 /* DINNeuzeitGroteskStd-BdCond.otf */; };
-		7691C65F20A66EC8006A0812 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65620A66EC7006A0812 /* DINPro-Light.otf */; };
-		7691C66020A66EC8006A0812 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65720A66EC7006A0812 /* DINEngschriftStd.otf */; };
-		7691C66120A66EC8006A0812 /* DINMittelschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65820A66EC7006A0812 /* DINMittelschriftStd.otf */; };
-		7691C66220A66EC8006A0812 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65920A66EC7006A0812 /* DINPro-Medium.otf */; };
-		7691C66320A66EC8006A0812 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65A20A66EC7006A0812 /* DINPro-Black.otf */; };
-		7691C66420A66EC8006A0812 /* DINNeuzeitGroteskStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65B20A66EC8006A0812 /* DINNeuzeitGroteskStd-Light.otf */; };
-		7691C66520A66EC8006A0812 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C65C20A66EC8006A0812 /* DINPro-Bold.otf */; };
 		7691C66720A67111006A0812 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C66620A67111006A0812 /* CustomButton.swift */; };
 		7691C66920A67652006A0812 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C66820A67652006A0812 /* Constants.swift */; };
 		7691C67020A764D4006A0812 /* ContatoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C66F20A764D4006A0812 /* ContatoTableViewController.swift */; };
@@ -34,6 +25,17 @@
 		7691C67F20A795F0006A0812 /* ContatoModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C67E20A795F0006A0812 /* ContatoModels.swift */; };
 		7691C68220A7968B006A0812 /* ContatoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C68120A7968B006A0812 /* ContatoService.swift */; };
 		7691C68420A7969B006A0812 /* InvestimentoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C68320A7969B006A0812 /* InvestimentoService.swift */; };
+		7691C68620A7A0DD006A0812 /* ContatoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C68520A7A0DD006A0812 /* ContatoInteractor.swift */; };
+		7691C69020A804EA006A0812 /* DINMittelschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68720A804E9006A0812 /* DINMittelschriftStd.otf */; };
+		7691C69120A804EA006A0812 /* DINPro-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68820A804E9006A0812 /* DINPro-Light.otf */; };
+		7691C69220A804EA006A0812 /* DINPro-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68920A804E9006A0812 /* DINPro-Medium.otf */; };
+		7691C69320A804EA006A0812 /* DINPro-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68A20A804E9006A0812 /* DINPro-Black.otf */; };
+		7691C69420A804EA006A0812 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68B20A804E9006A0812 /* DINNeuzeitGroteskStd-BdCond.otf */; };
+		7691C69520A804EA006A0812 /* DINEngschriftStd.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68C20A804E9006A0812 /* DINEngschriftStd.otf */; };
+		7691C69620A804EA006A0812 /* DINPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68D20A804E9006A0812 /* DINPro-Regular.otf */; };
+		7691C69720A804EA006A0812 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68E20A804EA006A0812 /* DINPro-Bold.otf */; };
+		7691C69820A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68F20A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf */; };
+		7691C69A20A813CB006A0812 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C69920A813CB006A0812 /* Types.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,15 +69,6 @@
 		7691C63B20A66A1F006A0812 /* TesteiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TesteiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7691C63F20A66A1F006A0812 /* TesteiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesteiOSUITests.swift; sourceTree = "<group>"; };
 		7691C64120A66A1F006A0812 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7691C65420A66EC7006A0812 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINPro-Regular.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINPro-Regular.otf"; sourceTree = "<group>"; };
-		7691C65520A66EC7006A0812 /* DINNeuzeitGroteskStd-BdCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINNeuzeitGroteskStd-BdCond.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINNeuzeitGroteskStd-BdCond.otf"; sourceTree = "<group>"; };
-		7691C65620A66EC7006A0812 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINPro-Light.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINPro-Light.otf"; sourceTree = "<group>"; };
-		7691C65720A66EC7006A0812 /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DINEngschriftStd.otf; path = "../../../20. Din     [1926 - Ludwig Goller]/DINEngschriftStd.otf"; sourceTree = "<group>"; };
-		7691C65820A66EC7006A0812 /* DINMittelschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DINMittelschriftStd.otf; path = "../../../20. Din     [1926 - Ludwig Goller]/DINMittelschriftStd.otf"; sourceTree = "<group>"; };
-		7691C65920A66EC7006A0812 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINPro-Medium.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINPro-Medium.otf"; sourceTree = "<group>"; };
-		7691C65A20A66EC7006A0812 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINPro-Black.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINPro-Black.otf"; sourceTree = "<group>"; };
-		7691C65B20A66EC8006A0812 /* DINNeuzeitGroteskStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINNeuzeitGroteskStd-Light.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINNeuzeitGroteskStd-Light.otf"; sourceTree = "<group>"; };
-		7691C65C20A66EC8006A0812 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DINPro-Bold.otf"; path = "../../../20. Din     [1926 - Ludwig Goller]/DINPro-Bold.otf"; sourceTree = "<group>"; };
 		7691C66620A67111006A0812 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		7691C66820A67652006A0812 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7691C66F20A764D4006A0812 /* ContatoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoTableViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +80,17 @@
 		7691C67E20A795F0006A0812 /* ContatoModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoModels.swift; sourceTree = "<group>"; };
 		7691C68120A7968B006A0812 /* ContatoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoService.swift; sourceTree = "<group>"; };
 		7691C68320A7969B006A0812 /* InvestimentoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestimentoService.swift; sourceTree = "<group>"; };
+		7691C68520A7A0DD006A0812 /* ContatoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatoInteractor.swift; sourceTree = "<group>"; };
+		7691C68720A804E9006A0812 /* DINMittelschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINMittelschriftStd.otf; sourceTree = "<group>"; };
+		7691C68820A804E9006A0812 /* DINPro-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Light.otf"; sourceTree = "<group>"; };
+		7691C68920A804E9006A0812 /* DINPro-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Medium.otf"; sourceTree = "<group>"; };
+		7691C68A20A804E9006A0812 /* DINPro-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Black.otf"; sourceTree = "<group>"; };
+		7691C68B20A804E9006A0812 /* DINNeuzeitGroteskStd-BdCond.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-BdCond.otf"; sourceTree = "<group>"; };
+		7691C68C20A804E9006A0812 /* DINEngschriftStd.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DINEngschriftStd.otf; sourceTree = "<group>"; };
+		7691C68D20A804E9006A0812 /* DINPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Regular.otf"; sourceTree = "<group>"; };
+		7691C68E20A804EA006A0812 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
+		7691C68F20A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-Light.otf"; sourceTree = "<group>"; };
+		7691C69920A813CB006A0812 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 				7691C62120A66A1C006A0812 /* TabBarController.swift */,
 				7691C61F20A66A1C006A0812 /* AppDelegate.swift */,
 				7691C66820A67652006A0812 /* Constants.swift */,
+				7691C62B20A66A1F006A0812 /* Info.plist */,
 				7691C66C20A75D42006A0812 /* Supporting Files */,
 			);
 			path = TesteiOS;
@@ -179,15 +184,15 @@
 		7691C65320A66E89006A0812 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				7691C65720A66EC7006A0812 /* DINEngschriftStd.otf */,
-				7691C65820A66EC7006A0812 /* DINMittelschriftStd.otf */,
-				7691C65520A66EC7006A0812 /* DINNeuzeitGroteskStd-BdCond.otf */,
-				7691C65B20A66EC8006A0812 /* DINNeuzeitGroteskStd-Light.otf */,
-				7691C65A20A66EC7006A0812 /* DINPro-Black.otf */,
-				7691C65C20A66EC8006A0812 /* DINPro-Bold.otf */,
-				7691C65620A66EC7006A0812 /* DINPro-Light.otf */,
-				7691C65920A66EC7006A0812 /* DINPro-Medium.otf */,
-				7691C65420A66EC7006A0812 /* DINPro-Regular.otf */,
+				7691C68C20A804E9006A0812 /* DINEngschriftStd.otf */,
+				7691C68720A804E9006A0812 /* DINMittelschriftStd.otf */,
+				7691C68B20A804E9006A0812 /* DINNeuzeitGroteskStd-BdCond.otf */,
+				7691C68F20A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf */,
+				7691C68A20A804E9006A0812 /* DINPro-Black.otf */,
+				7691C68E20A804EA006A0812 /* DINPro-Bold.otf */,
+				7691C68820A804E9006A0812 /* DINPro-Light.otf */,
+				7691C68920A804E9006A0812 /* DINPro-Medium.otf */,
+				7691C68D20A804E9006A0812 /* DINPro-Regular.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -215,7 +220,6 @@
 			children = (
 				7691C62820A66A1F006A0812 /* LaunchScreen.storyboard */,
 				7691C62620A66A1F006A0812 /* Assets.xcassets */,
-				7691C62B20A66A1F006A0812 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -227,6 +231,8 @@
 				7691C67120A764E8006A0812 /* ContatoPresenter.swift */,
 				7691C67320A764F5006A0812 /* ContatoWorker.swift */,
 				7691C67E20A795F0006A0812 /* ContatoModels.swift */,
+				7691C68520A7A0DD006A0812 /* ContatoInteractor.swift */,
+				7691C69920A813CB006A0812 /* Types.swift */,
 			);
 			path = Contato;
 			sourceTree = "<group>";
@@ -361,18 +367,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7691C65E20A66EC8006A0812 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */,
-				7691C65D20A66EC8006A0812 /* DINPro-Regular.otf in Resources */,
+				7691C69720A804EA006A0812 /* DINPro-Bold.otf in Resources */,
+				7691C69620A804EA006A0812 /* DINPro-Regular.otf in Resources */,
 				7691C62A20A66A1F006A0812 /* LaunchScreen.storyboard in Resources */,
-				7691C66220A66EC8006A0812 /* DINPro-Medium.otf in Resources */,
-				7691C66120A66EC8006A0812 /* DINMittelschriftStd.otf in Resources */,
-				7691C65F20A66EC8006A0812 /* DINPro-Light.otf in Resources */,
 				7691C62720A66A1F006A0812 /* Assets.xcassets in Resources */,
-				7691C66320A66EC8006A0812 /* DINPro-Black.otf in Resources */,
-				7691C66020A66EC8006A0812 /* DINEngschriftStd.otf in Resources */,
+				7691C69120A804EA006A0812 /* DINPro-Light.otf in Resources */,
+				7691C69520A804EA006A0812 /* DINEngschriftStd.otf in Resources */,
+				7691C69020A804EA006A0812 /* DINMittelschriftStd.otf in Resources */,
+				7691C69320A804EA006A0812 /* DINPro-Black.otf in Resources */,
+				7691C69220A804EA006A0812 /* DINPro-Medium.otf in Resources */,
+				7691C69420A804EA006A0812 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */,
 				7691C62520A66A1C006A0812 /* Main.storyboard in Resources */,
-				7691C66520A66EC8006A0812 /* DINPro-Bold.otf in Resources */,
-				7691C66420A66EC8006A0812 /* DINNeuzeitGroteskStd-Light.otf in Resources */,
+				7691C69820A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,10 +412,12 @@
 				7691C67620A7650A006A0812 /* InvestimentoPresenter.swift in Sources */,
 				7691C67420A764F5006A0812 /* ContatoWorker.swift in Sources */,
 				7691C62020A66A1C006A0812 /* AppDelegate.swift in Sources */,
+				7691C68620A7A0DD006A0812 /* ContatoInteractor.swift in Sources */,
 				7691C67A20A7652F006A0812 /* InvestimentoTableViewController.swift in Sources */,
 				7691C67820A7651D006A0812 /* InvestimentoWorker.swift in Sources */,
 				7691C66720A67111006A0812 /* CustomButton.swift in Sources */,
 				7691C66920A67652006A0812 /* Constants.swift in Sources */,
+				7691C69A20A813CB006A0812 /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
