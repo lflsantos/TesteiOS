@@ -36,6 +36,14 @@
 		7691C69720A804EA006A0812 /* DINPro-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68E20A804EA006A0812 /* DINPro-Bold.otf */; };
 		7691C69820A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 7691C68F20A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf */; };
 		7691C69A20A813CB006A0812 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7691C69920A813CB006A0812 /* Types.swift */; };
+		76ABE01520ABE28700E6C6C0 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABE01320ABE28700E6C6C0 /* TextFieldTableViewCell.swift */; };
+		76ABE01620ABE28700E6C6C0 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76ABE01420ABE28700E6C6C0 /* TextFieldTableViewCell.xib */; };
+		76ABE01920ABE68600E6C6C0 /* CheckBoxTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABE01720ABE68600E6C6C0 /* CheckBoxTableViewCell.swift */; };
+		76ABE01A20ABE68600E6C6C0 /* CheckBoxTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76ABE01820ABE68600E6C6C0 /* CheckBoxTableViewCell.xib */; };
+		76ABE01D20ABEBB500E6C6C0 /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABE01B20ABEBB500E6C6C0 /* ButtonTableViewCell.swift */; };
+		76ABE01E20ABEBB500E6C6C0 /* ButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76ABE01C20ABEBB500E6C6C0 /* ButtonTableViewCell.xib */; };
+		76ABE02120ABED8A00E6C6C0 /* LabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABE01F20ABED8A00E6C6C0 /* LabelTableViewCell.swift */; };
+		76ABE02220ABED8A00E6C6C0 /* LabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76ABE02020ABED8A00E6C6C0 /* LabelTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +99,14 @@
 		7691C68E20A804EA006A0812 /* DINPro-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINPro-Bold.otf"; sourceTree = "<group>"; };
 		7691C68F20A804EA006A0812 /* DINNeuzeitGroteskStd-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DINNeuzeitGroteskStd-Light.otf"; sourceTree = "<group>"; };
 		7691C69920A813CB006A0812 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		76ABE01320ABE28700E6C6C0 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		76ABE01420ABE28700E6C6C0 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		76ABE01720ABE68600E6C6C0 /* CheckBoxTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxTableViewCell.swift; sourceTree = "<group>"; };
+		76ABE01820ABE68600E6C6C0 /* CheckBoxTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CheckBoxTableViewCell.xib; sourceTree = "<group>"; };
+		76ABE01B20ABEBB500E6C6C0 /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		76ABE01C20ABEBB500E6C6C0 /* ButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ButtonTableViewCell.xib; sourceTree = "<group>"; };
+		76ABE01F20ABED8A00E6C6C0 /* LabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTableViewCell.swift; sourceTree = "<group>"; };
+		76ABE02020ABED8A00E6C6C0 /* LabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,6 +227,7 @@
 			children = (
 				7691C62320A66A1C006A0812 /* Main.storyboard */,
 				7691C65020A66C6F006A0812 /* Custom Views */,
+				76ABE02320ABED9200E6C6C0 /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,6 +278,21 @@
 				7691C68320A7969B006A0812 /* InvestimentoService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		76ABE02320ABED9200E6C6C0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				76ABE01F20ABED8A00E6C6C0 /* LabelTableViewCell.swift */,
+				76ABE02020ABED8A00E6C6C0 /* LabelTableViewCell.xib */,
+				76ABE01320ABE28700E6C6C0 /* TextFieldTableViewCell.swift */,
+				76ABE01420ABE28700E6C6C0 /* TextFieldTableViewCell.xib */,
+				76ABE01720ABE68600E6C6C0 /* CheckBoxTableViewCell.swift */,
+				76ABE01820ABE68600E6C6C0 /* CheckBoxTableViewCell.xib */,
+				76ABE01B20ABEBB500E6C6C0 /* ButtonTableViewCell.swift */,
+				76ABE01C20ABEBB500E6C6C0 /* ButtonTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,9 +403,13 @@
 				7691C69620A804EA006A0812 /* DINPro-Regular.otf in Resources */,
 				7691C62A20A66A1F006A0812 /* LaunchScreen.storyboard in Resources */,
 				7691C62720A66A1F006A0812 /* Assets.xcassets in Resources */,
+				76ABE01620ABE28700E6C6C0 /* TextFieldTableViewCell.xib in Resources */,
 				7691C69120A804EA006A0812 /* DINPro-Light.otf in Resources */,
 				7691C69520A804EA006A0812 /* DINEngschriftStd.otf in Resources */,
+				76ABE01E20ABEBB500E6C6C0 /* ButtonTableViewCell.xib in Resources */,
 				7691C69020A804EA006A0812 /* DINMittelschriftStd.otf in Resources */,
+				76ABE01A20ABE68600E6C6C0 /* CheckBoxTableViewCell.xib in Resources */,
+				76ABE02220ABED8A00E6C6C0 /* LabelTableViewCell.xib in Resources */,
 				7691C69320A804EA006A0812 /* DINPro-Black.otf in Resources */,
 				7691C69220A804EA006A0812 /* DINPro-Medium.otf in Resources */,
 				7691C69420A804EA006A0812 /* DINNeuzeitGroteskStd-BdCond.otf in Resources */,
@@ -404,17 +440,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				7691C68220A7968B006A0812 /* ContatoService.swift in Sources */,
+				76ABE01520ABE28700E6C6C0 /* TextFieldTableViewCell.swift in Sources */,
 				7691C62220A66A1C006A0812 /* TabBarController.swift in Sources */,
 				7691C68420A7969B006A0812 /* InvestimentoService.swift in Sources */,
 				7691C67220A764E8006A0812 /* ContatoPresenter.swift in Sources */,
 				7691C67F20A795F0006A0812 /* ContatoModels.swift in Sources */,
 				7691C67020A764D4006A0812 /* ContatoTableViewController.swift in Sources */,
 				7691C67620A7650A006A0812 /* InvestimentoPresenter.swift in Sources */,
+				76ABE02120ABED8A00E6C6C0 /* LabelTableViewCell.swift in Sources */,
 				7691C67420A764F5006A0812 /* ContatoWorker.swift in Sources */,
+				76ABE01D20ABEBB500E6C6C0 /* ButtonTableViewCell.swift in Sources */,
 				7691C62020A66A1C006A0812 /* AppDelegate.swift in Sources */,
 				7691C68620A7A0DD006A0812 /* ContatoInteractor.swift in Sources */,
 				7691C67A20A7652F006A0812 /* InvestimentoTableViewController.swift in Sources */,
 				7691C67820A7651D006A0812 /* InvestimentoWorker.swift in Sources */,
+				76ABE01920ABE68600E6C6C0 /* CheckBoxTableViewCell.swift in Sources */,
 				7691C66720A67111006A0812 /* CustomButton.swift in Sources */,
 				7691C66920A67652006A0812 /* Constants.swift in Sources */,
 				7691C69A20A813CB006A0812 /* Types.swift in Sources */,

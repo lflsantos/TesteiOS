@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DINPro-Regular.otf">
+            <string>DINPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkBoxCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="CheckBoxTableViewCell" customModule="TesteiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K8-Kc-yPO">
+                        <rect key="frame" x="83" y="11.5" width="40" height="20.5"/>
+                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                        <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-yG-7FZ">
+                        <rect key="frame" x="53" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="M7L-yG-7FZ" secondAttribute="height" multiplier="1:1" id="Z8O-HD-yK5"/>
+                        </constraints>
+                        <state key="normal" image="empty_checkbox"/>
+                        <state key="selected" image="selected_checkbox"/>
+                        <state key="highlighted" image="selected_checkbox"/>
+                        <connections>
+                            <action selector="touchedCheckBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vdP-8K-4sz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M7L-yG-7FZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.4" id="8hK-z0-00L"/>
+                    <constraint firstItem="M7L-yG-7FZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ZVK-Fl-YDh"/>
+                    <constraint firstItem="7K8-Kc-yPO" firstAttribute="leading" secondItem="M7L-yG-7FZ" secondAttribute="trailing" constant="8" id="jII-yV-f61"/>
+                    <constraint firstItem="7K8-Kc-yPO" firstAttribute="centerY" secondItem="M7L-yG-7FZ" secondAttribute="centerY" id="kBu-lf-YKp"/>
+                    <constraint firstItem="M7L-yG-7FZ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="odY-Iq-jrg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkBox" destination="M7L-yG-7FZ" id="6mq-F0-a6d"/>
+                <outlet property="label" destination="7K8-Kc-yPO" id="b40-Pt-Y1x"/>
+                <outlet property="topSpacingConstraint" destination="ZVK-Fl-YDh" id="W8e-gf-mUe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_checkbox" width="19" height="19"/>
+        <image name="selected_checkbox" width="19" height="19"/>
+    </resources>
+</document>

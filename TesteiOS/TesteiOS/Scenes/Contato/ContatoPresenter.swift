@@ -17,6 +17,8 @@ class ContatoPresenter: ContatoPresentationLogic {
     
     
     func presentFetchedCells(response: CelulasResponse) {
-        viewController?.displayCelulas(viewModel: CelulasViewModel(displayedCelulas: response.celulas))
+        DispatchQueue.main.async {
+            self.viewController?.displayCelulas(viewModel: CelulasViewModel(displayedCelulas: response.celulas))
+        }
     }
 }

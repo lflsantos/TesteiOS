@@ -29,3 +29,10 @@ enum Type : Int, Codable {
     case checkbox = 4
     case send = 5
 }
+
+struct CellIdentifier {
+    static let fieldCell = "fieldCellIdentifier"
+    static let textCell = "labelCellIdentifier"
+    static let checkBoxCell = "checkBoxCellIdentifier"
+    static let buttonCell = "buttonCellIdentifier"
+}
