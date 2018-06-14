@@ -21,21 +21,22 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVN-Gk-gJY" customClass="CustomButton" customModule="TesteiOS" customModuleProvider="target">
-                        <rect key="frame" x="32" y="13" width="256" height="30.5"/>
+                        <rect key="frame" x="32" y="8.5" width="256" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="Iz8-8Y-qea"/>
+                        </constraints>
                         <state key="normal" title="Button"/>
                     </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="wVN-Gk-gJY" secondAttribute="bottom" id="EEK-VZ-cWS"/>
                     <constraint firstItem="wVN-Gk-gJY" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="LDN-jK-7pi"/>
-                    <constraint firstItem="wVN-Gk-gJY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="cZi-dG-iLb"/>
                     <constraint firstItem="wVN-Gk-gJY" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="mBS-l4-eE0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="button" destination="wVN-Gk-gJY" id="mSf-bC-6Rz"/>
-                <outlet property="topSpacingConstraint" destination="cZi-dG-iLb" id="3Qb-KH-aNI"/>
             </connections>
         </tableViewCell>
     </objects>

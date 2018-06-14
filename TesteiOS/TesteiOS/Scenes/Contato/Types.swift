@@ -18,7 +18,7 @@ enum TypeField : Int, Codable{
 enum TypeFieldString : String{
     case null = ""
     case text = "text"
-    case telNumber = "telNumber"
+    case telNumber = "telnumber"
     case email = "email"
 }
 

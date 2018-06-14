@@ -15,7 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let bar = UINavigationBar.appearance()
+        bar.setBackgroundImage(UIImage(), for: .default)
+        bar.shadowImage = UIImage()
+        
+        let tabBar = UITabBarItem.appearance()
+        let attributes = [NSAttributedStringKey.font: UIFont(name: "DINPro-Medium", size: 18.0)!]
+        tabBar.setTitleTextAttributes(attributes, for: .normal)
+        tabBar.titlePositionAdjustment = UIOffsetMake(0.0, -13.0)
+        
         return true
     }
 

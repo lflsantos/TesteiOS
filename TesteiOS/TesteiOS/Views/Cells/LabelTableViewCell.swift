@@ -11,13 +11,11 @@ import UIKit
 class LabelTableViewCell: UITableViewCell {
 
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var topSpacingConstraint: NSLayoutConstraint!
     
     var celula: Celula? {
         didSet {
             label?.text = celula?.message
             self.isHidden = (celula?.hidden)!
-            topSpacingConstraint.constant = CGFloat((celula?.topSpacing)!)
         }
     }
     

@@ -17,7 +17,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fieldCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="LabelTableViewCell" customModule="TesteiOS" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="LabelTableViewCell" customModule="TesteiOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -25,22 +25,23 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adz-oz-z2J">
-                        <rect key="frame" x="140" y="11.5" width="40.5" height="20.5"/>
+                        <rect key="frame" x="140" y="9.5" width="40.5" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="DLW-K3-yhq"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="16"/>
                         <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="adz-oz-z2J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11.5" id="oFC-7N-SHm"/>
+                    <constraint firstAttribute="bottom" secondItem="adz-oz-z2J" secondAttribute="bottom" id="Fms-sW-hKb"/>
                     <constraint firstItem="adz-oz-z2J" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="r8w-Un-ub2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="label" destination="adz-oz-z2J" id="nR5-By-4Sg"/>
-                <outlet property="topSpaceConstraint" destination="H2p-sc-9uM" id="B4j-jC-iAU"/>
-                <outlet property="topSpacingConstraint" destination="oFC-7N-SHm" id="bWH-FV-nhT"/>
             </connections>
             <point key="canvasLocation" x="25" y="52.5"/>
         </tableViewCell>

@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol ContatoServiceProtocol {
+    func fetchCells(completitionHandler : @escaping (Celulas) -> Void)
+}
+
 class ContatoWorker{
     
     var contatoService : ContatoServiceProtocol
@@ -23,6 +27,4 @@ class ContatoWorker{
     }
 }
 
-protocol ContatoServiceProtocol {
-    func fetchCells(completitionHandler : @escaping (Celulas) -> Void)
-}
+

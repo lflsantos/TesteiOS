@@ -1,36 +1,72 @@
 //
-//  TableViewCell.swift
+//  TextFieldTableViewCell.swift
 //  TesteiOS
 //
-//  Created by Lucas Santos on 16/05/18.
+//  Created by Lucas Santos on 27/05/18.
 //  Copyright © 2018 Lucas Santos. All rights reserved.
 //
 
 import UIKit
 
-class TextFieldTableViewCell: UITableViewCell {
+class TextFieldTableViewCell: UITableViewCell, UITextFieldDelegate {
     
+
     @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var topSpacingConstraint: NSLayoutConstraint!
     
     var celula: Celula? {
         didSet {
-            textField.accessibilityHint = celula?.message
-
-            self.isHidden = (celula?.hidden)!
-            topSpacingConstraint.constant = CGFloat((celula?.topSpacing)!)
+            textField.text = nil
+            textField.placeholder = celula?.message
+            if celula?.typefield == TypeField.email /*|| celula?.typefield == TypeField.telNumber*/{
+                isValidField = false
+                self.textField.addTarget(self, action: #selector(self.textFieldChanged(_:)), for: .editingChanged)
+            }
+        }
+    }
+    
+    var isValidField = false {
+        didSet{
+            if(isValidField){
+                textField.layer.borderColor = UIColor.green.cgColor
+            }else {
+                textField.layer.borderColor = UIColor.red.cgColor
+            }
         }
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        textField.layer.borderWidth = 1.0
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    @objc func textFieldChanged(_ textField: UITextField){
+        let type = celula?.typefield
+        if(type == TypeField.email){
+            if (textField.text?.isValidEmail())! {
+                isValidField = true
+            } else {
+                isValidField = false
+            }
+        }else if celula?.typefield == TypeField.telNumber {
+            
+        }
     }
     
 }
+
+extension String {
+    func isValidEmail() -> Bool{
+        let stringPattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let expression = try! NSRegularExpression(pattern: stringPattern, options: .caseInsensitive)
+        return (expression.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil)
+    }
+    
+    func isValidPhone() -> Bool{
+        let stringPattern = "([0-9]{2}) [0-9]{4-5}\\-[0-9]{4}"
+        let expression = try! NSRegularExpression(pattern: stringPattern, options: .caseInsensitive)
+        return (expression.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil)
+    }
+}
+
+

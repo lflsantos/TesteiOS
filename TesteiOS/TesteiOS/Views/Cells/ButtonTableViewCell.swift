@@ -10,14 +10,12 @@ import UIKit
 
 class ButtonTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var topSpacingConstraint: NSLayoutConstraint!
     @IBOutlet weak var button: CustomButton!
     
     var celula: Celula? {
         didSet {
             button.setTitle(celula?.message, for: .normal)
             self.isHidden = (celula?.hidden)!
-            topSpacingConstraint.constant = CGFloat((celula?.topSpacing)!)
         }
     }
     

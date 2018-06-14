@@ -13,7 +13,7 @@ struct Celula : Codable{
     let type : Type
     let message : String
     let typefield : TypeField?
-    let hidden : Bool
+    var hidden : Bool
     let topSpacing : Float
     let show : Int?
     let required : Bool
@@ -44,7 +44,7 @@ struct Celula : Codable{
                 switch stringChecker {
                 case "text":
                     typefield = TypeField.text
-                case "telNumber":
+                case "telnumber":
                     typefield = TypeField.telNumber
                 case "email":
                     typefield = TypeField.email
@@ -77,4 +77,10 @@ struct CelulasResponse {
 
 struct CelulasViewModel {
     var displayedCelulas : [Celula]
+}
+
+struct FormModel {
+    let name: String
+    let email: String?
+    let telNumber: String
 }

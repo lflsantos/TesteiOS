@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+protocol InvestimentoServiceProtocol {
+    func fetchScreen(completitionHandler: @escaping (ParentScreen) -> Void)
+}
+
+class InvestimentoWorker {
+    var investimentoService: InvestimentoServiceProtocol
+    
+    init(investimentoService: InvestimentoServiceProtocol){
+        self.investimentoService = investimentoService
+    }
+    
+    func fetchScreen(completition: @escaping (Screen) -> Void){
+        investimentoService.fetchScreen{ (screen: ParentScreen) in
+            completition(screen.screen)
+        }
+    }
+}

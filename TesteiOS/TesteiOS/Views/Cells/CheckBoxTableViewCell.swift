@@ -12,13 +12,11 @@ class CheckBoxTableViewCell: UITableViewCell {
 
     @IBOutlet weak var checkBox: UIButton!
     @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var topSpacingConstraint: NSLayoutConstraint!
     
     var celula: Celula? {
         didSet {
             label.text = celula?.message
             self.isHidden = (celula?.hidden)!
-            topSpacingConstraint.constant = CGFloat((celula?.topSpacing)!)
         }
     }
     
@@ -37,4 +35,6 @@ class CheckBoxTableViewCell: UITableViewCell {
     @IBAction func touchedCheckBox(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }
+    
+    
 }

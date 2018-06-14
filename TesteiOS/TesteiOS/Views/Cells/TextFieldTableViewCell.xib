@@ -10,40 +10,36 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="DINPro-Medium.otf">
-            <string>DINPro-Medium</string>
-        </array>
-    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="labelCellIdentifier" rowHeight="80" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="fieldCellIdentifier" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="TesteiOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="58.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hint" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="9dR-mq-yT8">
-                        <rect key="frame" x="48" y="17.5" width="224" height="24"/>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OQ2-tI-KCc">
+                        <rect key="frame" x="32.5" y="8.5" width="256" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="6U3-dm-Pgb"/>
+                        </constraints>
                         <nil key="textColor"/>
-                        <fontDescription key="fontDescription" name="DINPro-Medium" family="DINPro" pointSize="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits"/>
                     </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="9dR-mq-yT8" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.7" id="cLP-De-fKq"/>
-                    <constraint firstItem="9dR-mq-yT8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17.5" id="oSg-bd-Znm"/>
-                    <constraint firstItem="9dR-mq-yT8" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="tFp-Dv-PRK"/>
+                    <constraint firstItem="OQ2-tI-KCc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="R8a-07-jWL"/>
+                    <constraint firstAttribute="bottom" secondItem="OQ2-tI-KCc" secondAttribute="bottom" id="az8-iV-iwb"/>
+                    <constraint firstItem="OQ2-tI-KCc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="udr-bO-eb8"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="textField" destination="9dR-mq-yT8" id="QOG-dc-RH7"/>
-                <outlet property="topSpacingConstraint" destination="oSg-bd-Znm" id="Psw-Q7-0UU"/>
+                <outlet property="textField" destination="OQ2-tI-KCc" id="7qJ-RK-zRG"/>
             </connections>
-            <point key="canvasLocation" x="26" y="59.5"/>
         </tableViewCell>
     </objects>
 </document>

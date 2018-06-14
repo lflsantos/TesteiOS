@@ -26,38 +26,44 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K8-Kc-yPO">
-                        <rect key="frame" x="83" y="11.5" width="40" height="20.5"/>
-                        <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
-                        <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-yG-7FZ">
-                        <rect key="frame" x="53" y="11" width="22" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="M7L-yG-7FZ" secondAttribute="height" multiplier="1:1" id="Z8O-HD-yK5"/>
-                        </constraints>
-                        <state key="normal" image="empty_checkbox"/>
-                        <state key="selected" image="selected_checkbox"/>
-                        <state key="highlighted" image="selected_checkbox"/>
-                        <connections>
-                            <action selector="touchedCheckBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vdP-8K-4sz"/>
-                        </connections>
-                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pk6-7S-pPc">
+                        <rect key="frame" x="32" y="8.5" width="256" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7L-yG-7FZ">
+                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="DNh-1y-RCY"/>
+                                    <constraint firstAttribute="width" secondItem="M7L-yG-7FZ" secondAttribute="height" multiplier="1:1" id="Z8O-HD-yK5"/>
+                                </constraints>
+                                <state key="normal" image="empty_checkbox"/>
+                                <state key="selected" image="selected_checkbox"/>
+                                <state key="highlighted" image="selected_checkbox"/>
+                                <connections>
+                                    <action selector="touchedCheckBox:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xsK-KO-crv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7K8-Kc-yPO">
+                                <rect key="frame" x="35" y="0.0" width="221" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="VaG-yO-yLB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINPro-Regular" family="DINPro" pointSize="16"/>
+                                <color key="textColor" red="0.67450980392156867" green="0.67450980392156867" blue="0.67450980392156867" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="M7L-yG-7FZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.4" id="8hK-z0-00L"/>
-                    <constraint firstItem="M7L-yG-7FZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="ZVK-Fl-YDh"/>
-                    <constraint firstItem="7K8-Kc-yPO" firstAttribute="leading" secondItem="M7L-yG-7FZ" secondAttribute="trailing" constant="8" id="jII-yV-f61"/>
-                    <constraint firstItem="7K8-Kc-yPO" firstAttribute="centerY" secondItem="M7L-yG-7FZ" secondAttribute="centerY" id="kBu-lf-YKp"/>
-                    <constraint firstItem="M7L-yG-7FZ" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.5" id="odY-Iq-jrg"/>
+                    <constraint firstAttribute="bottom" secondItem="pk6-7S-pPc" secondAttribute="bottom" id="J4A-f4-BFj"/>
+                    <constraint firstItem="pk6-7S-pPc" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ish-60-Ytm"/>
+                    <constraint firstItem="pk6-7S-pPc" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.8" id="xck-Iv-izX"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="checkBox" destination="M7L-yG-7FZ" id="6mq-F0-a6d"/>
                 <outlet property="label" destination="7K8-Kc-yPO" id="b40-Pt-Y1x"/>
-                <outlet property="topSpacingConstraint" destination="ZVK-Fl-YDh" id="W8e-gf-mUe"/>
             </connections>
         </tableViewCell>
     </objects>

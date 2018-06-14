@@ -20,7 +20,7 @@ class ContatoInteractor : ContatoBusinessLogic, ContatoDataStore {
     var celulas: [Celula]?
     
     var presenter : ContatoPresentationLogic?
-    var contatoWorker = ContatoWorker(contatoService: ContatoService())
+    var contatoWorker = ContatoWorker(contatoService: APIService())
     
     
     // MARK: - Fetch
